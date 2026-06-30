@@ -117,8 +117,8 @@ get_library_source() {
     SOURCE_TYPE="TAG"
     ;;
   libpng)
-    SOURCE_REPO_URL="https://github.com/arthenica/libpng"
-    SOURCE_ID="v1.6.40"
+    SOURCE_REPO_URL="https://github.com/pnggroup/libpng"
+    SOURCE_ID="v1.6.47"
     SOURCE_TYPE="TAG"
     ;;
   libsamplerate)
@@ -209,11 +209,6 @@ get_library_source() {
   snappy)
     SOURCE_REPO_URL="https://github.com/arthenica/snappy"
     SOURCE_ID="1.1.9"
-    SOURCE_TYPE="TAG"
-    ;;
-  soxr)
-    SOURCE_REPO_URL="https://github.com/arthenica/soxr"
-    SOURCE_ID="0.1.3"
     SOURCE_TYPE="TAG"
     ;;
   speex)

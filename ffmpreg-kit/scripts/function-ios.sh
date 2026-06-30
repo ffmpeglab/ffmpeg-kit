@@ -232,7 +232,7 @@ get_app_specific_cflags() {
   shine)
     APP_FLAGS="-Wno-unused-function"
     ;;
-  soxr | snappy)
+  snappy)
     APP_FLAGS="-std=gnu99 -Wno-unused-function -DPIC"
     ;;
   *)

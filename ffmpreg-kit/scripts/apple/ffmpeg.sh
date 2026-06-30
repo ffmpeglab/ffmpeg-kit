@@ -213,11 +213,6 @@ for library in {0..61}; do
       FFMPEG_LDFLAGS+=" $(pkg-config --libs --static openh264 2>>"${BASEDIR}"/build.log)"
       CONFIGURE_POSTFIX+=" --enable-libopenh264"
       ;;
-    openssl)
-      FFMPEG_CFLAGS+=" $(pkg-config --cflags openssl 2>>"${BASEDIR}"/build.log)"
-      FFMPEG_LDFLAGS+=" $(pkg-config --libs --static openssl 2>>"${BASEDIR}"/build.log)"
-      CONFIGURE_POSTFIX+=" --enable-openssl"
-      ;;
     opus)
       FFMPEG_CFLAGS+=" $(pkg-config --cflags opus 2>>"${BASEDIR}"/build.log)"
       FFMPEG_LDFLAGS+=" $(pkg-config --libs --static opus 2>>"${BASEDIR}"/build.log)"
@@ -243,11 +238,6 @@ for library in {0..61}; do
       FFMPEG_CFLAGS+=" $(pkg-config --cflags snappy 2>>"${BASEDIR}"/build.log)"
       FFMPEG_LDFLAGS+=" $(pkg-config --libs --static snappy 2>>"${BASEDIR}"/build.log)"
       CONFIGURE_POSTFIX+=" --enable-libsnappy"
-      ;;
-    soxr)
-      FFMPEG_CFLAGS+=" $(pkg-config --cflags soxr 2>>"${BASEDIR}"/build.log)"
-      FFMPEG_LDFLAGS+=" $(pkg-config --libs --static soxr 2>>"${BASEDIR}"/build.log)"
-      CONFIGURE_POSTFIX+=" --enable-libsoxr"
       ;;
     speex)
       FFMPEG_CFLAGS+=" $(pkg-config --cflags speex 2>>"${BASEDIR}"/build.log)"

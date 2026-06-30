@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
 
   s.prepare_command = <<-CMD
       cd ffmpreg-kit || exit $?
-      ./ios.sh --xcframework --full --enable-gpl || exit $?
+      ./ios.sh --xcframework --full --enable-gpl --disable-x86-64 --disable-x86-64-mac-catalyst || exit $?
   CMD
 
   s.subspec 'min' do |ss|
