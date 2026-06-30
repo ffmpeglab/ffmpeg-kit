@@ -139,15 +139,15 @@ dependencies {
     println("ANDROID_SDK_ROOT = ${android.sdkDirectory.absolutePath}")
     println("ANDROID_NDK_ROOT = ${android.ndkDirectory.absolutePath}")
     exec {
-      workingDir "${project.projectDir}/../ffmpreg-kit"
+      workingDir "${project.projectDir}/../ffmpeg-kit"
       commandLine "mkdir", "-p", "./android/ffmpeg-kit-android-lib/src/main/res/raw"
     }
     exec {
-      workingDir "${project.projectDir}/../ffmpreg-kit"
+      workingDir "${project.projectDir}/../ffmpeg-kit"
       commandLine "touch", "./android/ffmpeg-kit-android-lib/src/main/res/raw/license_cpu_features.txt"
     }
     exec {
-      workingDir "${project.projectDir}/../ffmpreg-kit"
+      workingDir "${project.projectDir}/../ffmpeg-kit"
       environment "ANDROID_SDK_ROOT", android.sdkDirectory.absolutePath
       environment "ANDROID_NDK_ROOT", android.ndkDirectory.absolutePath
       commandLine "bash", "./android.sh"
