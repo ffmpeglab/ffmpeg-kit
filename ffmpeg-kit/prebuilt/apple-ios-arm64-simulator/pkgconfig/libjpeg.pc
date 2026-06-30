@@ -1,0 +1,10 @@
+prefix=/Users/danilapuzikov/dev/StarpyApp/node_modules/ffmpeg-kit-react-native/ffmpreg-kit/prebuilt/apple-ios-arm64-simulator/jpeg
+exec_prefix=/Users/danilapuzikov/dev/StarpyApp/node_modules/ffmpeg-kit-react-native/ffmpreg-kit/prebuilt/apple-ios-arm64-simulator/jpeg
+libdir=/Users/danilapuzikov/dev/StarpyApp/node_modules/ffmpeg-kit-react-native/ffmpreg-kit/prebuilt/apple-ios-arm64-simulator/jpeg/lib
+includedir=/Users/danilapuzikov/dev/StarpyApp/node_modules/ffmpeg-kit-react-native/ffmpreg-kit/prebuilt/apple-ios-arm64-simulator/jpeg/include
+
+Name: libjpeg
+Description: A SIMD-accelerated JPEG codec that provides the libjpeg API
+Version: 3.0.0
+Libs: -L${libdir} -ljpeg
+Cflags: -I${includedir}

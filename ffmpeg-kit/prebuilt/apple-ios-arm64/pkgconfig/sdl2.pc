@@ -1,0 +1,15 @@
+# sdl pkg-config source file
+
+prefix=/Users/danilapuzikov/dev/StarpyApp/node_modules/ffmpeg-kit-react-native/ffmpreg-kit/prebuilt/apple-ios-arm64/sdl
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: sdl2
+Description: Simple DirectMedia Layer is a cross-platform multimedia library designed to provide low level access to audio, keyboard, mouse, joystick, 3D hardware via OpenGL, and 2D video framebuffer.
+Version: 2.0.8
+Requires:
+Conflicts:
+Libs: -L${libdir}  -lSDL2 
+Libs.private: -lSDL2   -lm -liconv  -Wl,-framework,CoreMotion -Wl,-framework,UIKit -lm -liconv -lobjc -Wl,-framework,AVFoundation -Wl,-framework,AudioToolbox -Wl,-framework,CoreAudio -Wl,-framework,CoreGraphics -Wl,-framework,Foundation -Wl,-framework,GameController -Wl,-framework,QuartzCore
+Cflags: -I${includedir}/SDL2  -D_THREAD_SAFE

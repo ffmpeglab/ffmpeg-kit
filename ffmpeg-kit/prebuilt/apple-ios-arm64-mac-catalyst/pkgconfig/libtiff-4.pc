@@ -1,0 +1,11 @@
+prefix=/Users/danilapuzikov/dev/StarpyApp/node_modules/ffmpeg-kit-react-native/ffmpreg-kit/prebuilt/apple-ios-arm64-mac-catalyst/tiff
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libtiff
+Description:  Tag Image File Format (TIFF) library.
+Version: 4.0.10
+Libs: -L${libdir} -ltiff
+Libs.private: -ljpeg -lz 
+Cflags: -I${includedir}

@@ -1,0 +1,12 @@
+prefix=/Users/danilapuzikov/dev/StarpyApp/node_modules/ffmpeg-kit-react-native/ffmpreg-kit/prebuilt/apple-ios-arm64/chromaprint
+exec_prefix=/Users/danilapuzikov/dev/StarpyApp/node_modules/ffmpeg-kit-react-native/ffmpreg-kit/prebuilt/apple-ios-arm64/chromaprint
+libdir=/Users/danilapuzikov/dev/StarpyApp/node_modules/ffmpeg-kit-react-native/ffmpreg-kit/prebuilt/apple-ios-arm64/chromaprint/lib
+includedir=/Users/danilapuzikov/dev/StarpyApp/node_modules/ffmpeg-kit-react-native/ffmpreg-kit/prebuilt/apple-ios-arm64/chromaprint/include
+
+Name: chromaprint
+Description: Audio fingerprint library
+URL: http://acoustid.org/chromaprint
+Version: 1.5.1
+Libs: -L/Users/danilapuzikov/dev/StarpyApp/node_modules/ffmpeg-kit-react-native/ffmpreg-kit/prebuilt/apple-ios-arm64/chromaprint/lib -lchromaprint
+Cflags: -I/Users/danilapuzikov/dev/StarpyApp/node_modules/ffmpeg-kit-react-native/ffmpreg-kit/prebuilt/apple-ios-arm64/chromaprint/include
+

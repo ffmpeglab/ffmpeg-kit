@@ -1,0 +1,16 @@
+prefix=/Users/danilapuzikov/dev/StarpyApp/node_modules/ffmpeg-kit-react-native/ffmpreg-kit/prebuilt/apple-ios-x86_64/tesseract
+exec_prefix=${prefix}
+bindir=${exec_prefix}/bin
+datarootdir=${prefix}/share
+datadir=${datarootdir}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: tesseract
+Description: An OCR Engine that was developed at HP Labs between 1985 and 1995... and now at Google.
+URL: https://github.com/tesseract-ocr/tesseract
+Version: 5.3.2
+
+Requires: lept
+Libs: -L${libdir} -ltesseract -framework Accelerate
+Cflags: -I${includedir}

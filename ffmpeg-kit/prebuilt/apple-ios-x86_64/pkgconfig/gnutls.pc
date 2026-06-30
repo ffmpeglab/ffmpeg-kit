@@ -1,0 +1,13 @@
+prefix=/Users/danilapuzikov/dev/StarpyApp/node_modules/ffmpeg-kit-react-native/ffmpreg-kit/prebuilt/apple-ios-x86_64/gnutls
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: gnutls
+Description: GNU TLS Implementation
+
+Version: 3.7.9
+Requires: nettle, hogweed
+Cflags: -I${includedir}
+Libs: -L${libdir} -lgnutls 
+Libs.private: -lgmp

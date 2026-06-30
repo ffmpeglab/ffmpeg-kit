@@ -1,0 +1,11 @@
+prefix=/Users/danilapuzikov/dev/StarpyApp/node_modules/ffmpeg-kit-react-native/ffmpreg-kit/prebuilt/apple-ios-x86_64/kvazaar
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+incdir=${prefix}/include
+
+Name: libkvazaar
+Description: Open-source HEVC encoder
+Version: 2.2.0
+Libs: -L${libdir} -lkvazaar
+Libs.private:   
+Cflags: -I${incdir}

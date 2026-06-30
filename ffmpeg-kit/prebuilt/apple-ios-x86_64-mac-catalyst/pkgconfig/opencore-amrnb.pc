@@ -1,0 +1,10 @@
+prefix=/Users/danilapuzikov/dev/StarpyApp/node_modules/ffmpeg-kit-react-native/ffmpreg-kit/prebuilt/apple-ios-x86_64-mac-catalyst/opencore-amr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: OpenCORE AMR-NB
+Description: Adaptive Multi-Rate speech codec library
+Version: 0.1.6
+Libs: -L${libdir} -lopencore-amrnb
+Cflags: -I${includedir}

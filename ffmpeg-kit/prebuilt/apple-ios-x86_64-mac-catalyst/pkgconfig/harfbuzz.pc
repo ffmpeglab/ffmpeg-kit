@@ -1,0 +1,13 @@
+prefix=/Users/danilapuzikov/dev/StarpyApp/node_modules/ffmpeg-kit-react-native/ffmpreg-kit/prebuilt/apple-ios-x86_64-mac-catalyst/harfbuzz
+exec_prefix=/Users/danilapuzikov/dev/StarpyApp/node_modules/ffmpeg-kit-react-native/ffmpreg-kit/prebuilt/apple-ios-x86_64-mac-catalyst/harfbuzz
+libdir=/Users/danilapuzikov/dev/StarpyApp/node_modules/ffmpeg-kit-react-native/ffmpreg-kit/prebuilt/apple-ios-x86_64-mac-catalyst/harfbuzz/lib
+includedir=/Users/danilapuzikov/dev/StarpyApp/node_modules/ffmpeg-kit-react-native/ffmpreg-kit/prebuilt/apple-ios-x86_64-mac-catalyst/harfbuzz/include
+
+Name: harfbuzz
+Description: HarfBuzz text shaping library
+Version: 8.0.1
+
+Libs: -L${libdir} -lharfbuzz
+Libs.private: -lm      
+Requires.private:  freetype2 >= 12.0.6 
+Cflags: -I${includedir}/harfbuzz
